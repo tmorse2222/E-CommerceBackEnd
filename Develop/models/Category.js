@@ -1,9 +1,10 @@
+// Requires sequelize
 const { Model, DataTypes } = require('sequelize');
-
+// requires SQL connection
 const sequelize = require('../config/connection.js');
-
+// Create Category model
 class Category extends Model {}
-
+// Build Category model
 Category.init(
   {
     id: {
@@ -25,5 +26,5 @@ Category.init(
     modelName: 'category',
   }
 );
-
+// Export Category model
 module.exports = Category;

@@ -1,9 +1,10 @@
+// Requires sequelize
 const { Model, DataTypes } = require('sequelize');
-
+// Requires SQL connection
 const sequelize = require('../config/connection');
-
+// Create ProductTag model
 class ProductTag extends Model {}
-
+// Create fields and rules for ProductTag model
 ProductTag.init(
   {
     id: {
@@ -35,5 +36,5 @@ ProductTag.init(
     modelName: 'product_tag',
   }
 );
-
+// Export ProductTag model
 module.exports = ProductTag;
