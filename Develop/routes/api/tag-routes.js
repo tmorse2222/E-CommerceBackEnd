@@ -1,7 +1,7 @@
 // Require express router
 const router = require('express').Router();
 // Require models
-const { Tag, Product, ProductTag } = require('../../models');
+const { Tag, Product } = require('../../models');
 
 // The `/api/tags` endpoint
 // GET all tags with associated Product data
